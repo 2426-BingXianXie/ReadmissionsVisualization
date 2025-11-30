@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 3 D3 part </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hospital Readmission Trend</h1>
+    <h3>Members: Mei Qi (Amy) Chen, Jenny Zhao, Tianyou Lyu, Eason Xie.</h3>
+
+    <h2>Introduction:</h2>
+    <p><b style="color: darkblue;">An overall introduction to your project, including the topic and tasks.</b></p>
+    <p>Hospital readmission rate is a concern for both healthcare providers and patients. In the majority
+cases of readmissions, they not only signal potential lapses in patient care continuity but also
+impose substantial financial burdens on providers and payers. In this project, we will use the
+“Predicting Hospital Readmissions” dataset from Kaggle to visualize how readmission rates
+change over time and across different patient groups. By transforming raw numbers into intuitive
+charts, interactive dashboards, and spatial mappings, we aim to illuminate key patterns and
+support stakeholders, clinicians, administrators, and policy makers, in identifying areas for
+improvement and intervention.</p>
+
+    <h2>Dataset Introduction:</h2>
+    <p><b style="color: darkblue;">A paragraph to introduce the data, including the size, source and attributes.</b></p>
+    <p>Our dataset “Predicting Hospital Readmissions” was retrieved from the public source Kaggle and
+collected this data to analyze whether or not diabetes is a significant predictor of hospital
+readmissions. This dataset contains 17 variables and approximately 25,000 rows of data which
+will be cleaned and processed for missing rows and incomplete information.
+</p>
+
+    <b>Variables Include:</b>
+
+    <ol class = 'variables'>
+        <li>Age</li>
+        <li>Time in hospital</li>
+        <li>Number of procedures performed during the hospital stay</li>
+        <li>Number of laboratory procedures performed during the hospital stay</li>
+        <li>Number of medications administered during the hospital stay</li>
+        <li>Outpatient visits in the year before a hospital stay</li>
+        <li>Inpatient visits in the year before the hospital stay</li>
+        <li>Visits to the emergency room in the year before the hospital stay</li>
+        <li>Specialty of the admitting physician</li>
+        <li>Primary diagnosis</li>
+        <li>Secondary diagnosis</li>
+        <li>Additional secondary diagnosis</li>
+        <li>Glucose serum</li>
+        <li>A1C level of the patient</li>
+        <li>Change in the diabetes medication</li>
+        <li>Whether a diabetes medication was prescribed</li>
+        <li>Patient was readmitted to the hospital (Yes/No)</li>
+    </ol>
+
+    <h2>References:</h2>
+    <p class = 'reference'>Zhang, Y ., et al. (2024). Explainable machine learning for predicting 30-day readmission
+in acute heart failure patients. iScience. Advance online publication.</p>
+    <a href="https://doi.org/10.1016/j.isci.2024.110281">https://doi.org/10.1016/j.isci.2024.110281</a>
+
+    <p class = 'reference'>Teo, K., et al. (2021). Current trends in readmission prediction: An overview of
+approaches. International Journal of Medical Informatics, 155, 104616.</p>
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8366485/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8366485/</a>
+
+    <h2>Visualization 1:</h2>
+    <div id="v1"></div>
+
+    <p class = 'v'>takeaway</p>
+
+    <h2>Visualization 2:</h2>
+    <div id="v2"></div>
+
+    <p class = 'v'>takeaway</p>
+
+    <h2>Visualization 3:</h2>
+    <div id="v3"></div>
+
+    <p class = 'v'>takeaway</p>
+
+    <h2>Visualization 4:</h2>
+    <div id="v4"></div>
+
+    <p class = 'v'>takeaway</p>
+
+    <h2>Visualization 5:</h2>
+    <div id="v5"></div>
+
+    <p class = 'v'>takeaway</p>
+
+    <h2>Visualization 6: Diagnosis Distribution by Age Group</h2>
+    <div id="v6"></div>
+    <p class='v'><b>Key Takeaway:</b> This grouped bar chart reveals how different 
+        diagnoses are distributed across age groups. Circulatory conditions show the 
+        highest frequency, particularly in the 70-80 age range, which aligns with 
+        expected patterns of age-related cardiovascular issues. The visualization 
+        allows for easy comparison of diagnosis patterns across the entire patient 
+        population age spectrum.</p>
+
+    <h2>Visualization 7: Medical Specialty Categories with Readmission Rates</h2>
+    <div id="v7"></div>
+    <p class='v'><b>Key Finding:</b> This horizontal bar chart identifies which 
+        medical specialties face the greatest readmission challenges. Only specialties
+        with 50+ patients are included to ensure statistical reliability, and missing 
+        specialty data has been excluded. Specialties above the red average line have 
+        elevated readmission rates, suggesting these departments may need targeted 
+        interventions such as improved discharge education, enhanced follow-up care, 
+        or better care coordination to reduce preventable readmissions.</p>
+    <h2>Summary of Finding:</h2>
+    <p>Summary</p>
+    
+    <script src='https://d3js.org/d3.v7.min.js'></script>
+    <script src='main.js'></script>   
+</body>
+</html>

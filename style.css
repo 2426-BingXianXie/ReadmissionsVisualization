@@ -1,0 +1,69 @@
+h1 {
+    font-family: 'Georgia';
+    font-weight: bold;
+    text-align: center}
+
+h2 {
+    font-family: 'Georgia';
+    font-weight: bold;
+    margin-top: 50px
+}
+
+h3 {
+    font-family: 'Georgia';
+    font-weight: bold;
+    text-align: center;
+}
+
+body {
+    font-family: 'Georgia';
+    padding: 30px 35px 30px 35px;
+    background-color:rgb(206, 240, 240); 
+    color: black;           
+}
+
+div {
+    text-align: center
+}
+
+.v {text-align: left;
+}
+
+.variables{
+    margin-top: 10px !important;
+    list-style-type: circle;
+
+}
+
+.reference{
+    margin-bottom: 2px;
+    font-family: 'Georgia';
+    
+}
+
+a {color: rgb(19, 146, 188);}
+
+a:hover {color:rgb(107, 107, 221);}
+
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.3;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+svg text {
+    font-family: 'Georgia', serif;
+}
+
+rect {
+    transition: opacity 0.2s;
+}
+
+rect:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
