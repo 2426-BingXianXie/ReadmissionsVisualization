@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 3 D3 part </title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Hospital Readmission Trend</h1>
@@ -60,6 +60,8 @@ in acute heart failure patients. iScience. Advance online publication.</p>
 approaches. International Journal of Medical Informatics, 155, 104616.</p>
     <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8366485/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8366485/</a>
 
+    <div class="charts">
+
     <h2>Visualization 1:</h2>
     <div id="v1"></div>
 
@@ -76,14 +78,36 @@ approaches. International Journal of Medical Informatics, 155, 104616.</p>
     <p class = 'v'>takeaway</p>
 
     <h2>Visualization 4:</h2>
-    <div id="v4"></div>
+    <iframe src="glucoseChart.html" width="600" height="400"></iframe>
 
-    <p class = 'v'>takeaway</p>
+    <p class = 'v'>
+        <b>Key Finding:</b> 
+        From the stacked bar chart, it can be seen that most values in this dataset for glucose 
+        level is unavailable. However, through this stack bar chart's interactive selection 
+        legend, it can be seen that in the dataset, most patients that readmit into hospitals 
+        are patients in the age range of 70-80. This indicates that younger patients with diabeties 
+        is less likely to be readmitted into hospitals whereas older patients are more likely to as
+        seen from the right skew of both the high glucose level selection and the normal level selection.
+        This also indicates that diabetes may not be an indication of hospital readmission since
+        the distribution of high glucose count is about the same as the normal glucose count distribution.
+
+    </p>
 
     <h2>Visualization 5:</h2>
-    <div id="v5"></div>
+    <iframe src="multiLinear.html" width="600" height="400"></iframe>
 
-    <p class = 'v'>takeaway</p>
+    <p class = 'v'>
+        <b>Key Finding:</b> 
+        This multi-linear chart contains each line as different age groups, its X-axis as time in hospital (Days),
+        and its Y-axis as the average number of procedures done for each age group for the amount of time they 
+        stay in the hospial. The chart contains interactive elements including a selectable age range legend that will 
+        allow users to see each line alone as well as a hover tooltip that will show age range, time in hospital, and average 
+        procedures done of each data point. As the time in hospital increases, the amount of lab procedures done starts to gradually increase
+        with patients in the age range of 90-100 having dramatic drops in the average number of procedure done. This may indicate
+        patients in this age group typically leave the hospital after a certain time or they may have passed away. Moreover,
+        starting on the first day, patients in age group 90-100 has a higher number of procedures done than any other groups. 
+        Patients in the youngest age groupp 40-50 typically have fewer number of procedures done on average. 
+    </p>
 
     <h2>Visualization 6: Diagnosis Distribution by Age Group</h2>
     <div id="v6"></div>
@@ -105,6 +129,8 @@ approaches. International Journal of Medical Informatics, 155, 104616.</p>
         or better care coordination to reduce preventable readmissions.</p>
     <h2>Summary of Finding:</h2>
     <p>Summary</p>
+
+    </div>
     
     <script src='https://d3js.org/d3.v7.min.js'></script>
     <script src='main.js'></script>   

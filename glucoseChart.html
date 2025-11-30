@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"labelFont": "Times New Roman", "titleFont": "Times New Roman"}, "legend": {"labelFont": "Times New Roman", "titleFont": "Times New Roman"}, "title": {"font": "Times New Roman", "fontSize": 15}}, "hconcat": [{"mark": {"type": "bar", "size": 50, "stroke": "black", "strokeWidth": 0.2}, "encoding": {"color": {"condition": {"param": "param_7", "field": "glucose_test", "legend": null, "scale": {"range": ["red", "#d3d3d3", "green"]}, "type": "nominal"}, "value": "grey"}, "opacity": {"condition": {"param": "param_7", "value": 1}, "value": 0.1}, "tooltip": [{"field": "glucose_test", "title": "Glucose Test", "type": "nominal"}, {"field": "count", "title": "Count", "type": "quantitative"}], "x": {"axis": {"labelAngle": 0}, "field": "age", "title": "Ages", "type": "ordinal"}, "y": {"field": "count", "title": "Counts", "type": "quantitative"}}, "height": 300, "title": "Glucose Level Amongst Age Groups", "transform": [{"filter": {"param": "param_7"}}], "width": 400}, {"mark": {"type": "rect"}, "encoding": {"color": {"condition": {"param": "param_7", "field": "glucose_test", "legend": null, "type": "nominal"}, "value": "grey"}, "y": {"field": "glucose_test", "title": "Glucose Level", "type": "nominal"}}, "name": "view_6"}], "data": {"name": "data-78e8dc983f8917bf6f7ec928d1d7deb2"}, "params": [{"name": "param_7", "select": {"type": "point", "fields": ["glucose_test"]}, "views": ["view_6"]}], "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-78e8dc983f8917bf6f7ec928d1d7deb2": [{"age": "[40-50)", "glucose_test": "high", "count": 82}, {"age": "[40-50)", "glucose_test": "no", "count": 2391}, {"age": "[40-50)", "glucose_test": "normal", "count": 59}, {"age": "[50-60)", "glucose_test": "high", "count": 88}, {"age": "[50-60)", "glucose_test": "no", "count": 4264}, {"age": "[50-60)", "glucose_test": "normal", "count": 100}, {"age": "[60-70)", "glucose_test": "high", "count": 127}, {"age": "[60-70)", "glucose_test": "no", "count": 5643}, {"age": "[60-70)", "glucose_test": "normal", "count": 143}, {"age": "[70-80)", "glucose_test": "high", "count": 198}, {"age": "[70-80)", "glucose_test": "no", "count": 6442}, {"age": "[70-80)", "glucose_test": "normal", "count": 197}, {"age": "[80-90)", "glucose_test": "high", "count": 156}, {"age": "[80-90)", "glucose_test": "no", "count": 4201}, {"age": "[80-90)", "glucose_test": "normal", "count": 159}, {"age": "[90-100)", "glucose_test": "high", "count": 35}, {"age": "[90-100)", "glucose_test": "no", "count": 684}, {"age": "[90-100)", "glucose_test": "normal", "count": 31}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
