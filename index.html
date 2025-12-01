@@ -68,14 +68,34 @@ approaches. International Journal of Medical Informatics, 155, 104616.</p>
     <p class = 'v'>takeaway</p>
 
     <h2>Visualization 2:</h2>
-    <div id="v2"></div>
+    <iframe src="Violin_Plot.html" width="900" height="450"></iframe>
+    <iframe src="Visit_Metrics_Log_Violin.html" width="900" height="450"></iframe>
+    <p class="v">
+    <b>Key Finding:</b> 
+    The full violin plot shows that most hospital-related measurements in the dataset are highly 
+    right skewed, meaning the majority of patients use only a small amount of medical resources 
+    while a smaller subset requires substantially more, with readmitted patients appearing more
+    frequently in those higher-value ranges. 
+    Because three of the variables (outpatient, inpatient, and emergency visits) operate on a much 
+    smaller scale and were visually compressed in the full plot, a separate log-scaled violin chart 
+    was created, revealing more detailed variation and showing that patients with higher visit 
+    frequency, especially before hospitalization, are more likely to be readmitted, suggesting prior 
+    care utilization may be an early indicator of clinical instability.
+</p>
 
-    <p class = 'v'>takeaway</p>
 
     <h2>Visualization 3:</h2>
-    <div id="v3"></div>
+    <iframe src="Ridgeline_Plot_Hospital_Metrics.html" width="800" height="650"></iframe>
+    <p class='v'>
+        <b>Key Finding:</b> 
+        The ridgeline plot provides a high-level view of how each hospital utilization 
+        metric is distributed across the patient population. Most features show a strong 
+        right-skew, meaning that while the majority of patients use relatively few medical 
+        resources, a smaller subset requires significantly more care. This suggests the presence 
+        of a high-need patient group, which may be especially important when analyzing risk 
+        factors for rehospitalization and designing targeted interventions.
+    </p>
 
-    <p class = 'v'>takeaway</p>
 
     <h2>Visualization 4:</h2>
     <iframe src="glucoseChart.html" width="600" height="400"></iframe>
