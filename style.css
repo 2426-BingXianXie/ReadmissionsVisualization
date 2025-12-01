@@ -67,3 +67,11 @@ rect:hover {
     opacity: 0.7;
     cursor: pointer;
 }
+
+.viz-container iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 550px;
+  display: block;
+  margin: 0 auto;
+}
