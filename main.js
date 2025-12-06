@@ -6,7 +6,7 @@ Promise.all([
     createSpecialtyReadmissionChart(specialtyData);
 });
 
-// Visualization 6
+// Visualization 5
 function createDiagnosisAgeChart(data) {
     const margin = {top: 60, right: 180, bottom: 120, left: 80};
     const width = 1000 - margin.left - margin.right;
@@ -202,7 +202,7 @@ function createDiagnosisAgeChart(data) {
         .style("font-family", "Georgia");
 }
 
-// Visualization 7
+// Visualization 6
 function createSpecialtyReadmissionChart(data) {
     const margin = {top: 80, right: 80, bottom: 80, left: 230};
     const width = 1100 - margin.left - margin.right;
@@ -235,10 +235,6 @@ function createSpecialtyReadmissionChart(data) {
     const xScale = d3.scaleLinear()
         .domain([0, d3.max(data, d => d.readmission_rate) * 1.1])
         .range([0, width]);
-
-    const colorScale = d3.scaleSequential()
-        .domain([d3.min(data, d => d.readmission_rate), d3.max(data, d => d.readmission_rate)])
-        .interpolator(d3.interpolateViridis);
 
     svg.append("g")
         .attr("class", "grid")
@@ -273,7 +269,7 @@ function createSpecialtyReadmissionChart(data) {
         .attr("y", d => yScale(d.medical_specialty))
         .attr("width", 0)
         .attr("height", yScale.bandwidth())
-        .attr("fill", d => colorScale(d.readmission_rate))
+        .attr("fill", "steelblue")
         .attr("stroke", "darkslategray")
         .attr("stroke-width", 1)
         .transition()
