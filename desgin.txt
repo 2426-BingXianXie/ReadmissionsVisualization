@@ -1,0 +1,33 @@
+# Visualization Design Explanations
+
+## Visualization 5: Frequency of Diagnosis by Age & Primary Diagnosis
+
+This visualization uses a grouped bar chart to display the relationship between 
+the top seven primary diagnoses and patient age groups. The grouped bar format 
+allows simultaneous comparison across both diagnoses and age demographics. 
+A color gradient from dark violet to yellow represents the ten age groups, creating 
+a natural progression that helps viewers track age-related patterns across different 
+medical conditions. Key design decisions include filtering to the top seven diagnoses 
+to maintain readability, incorporating staggered entry animations for visual engagement, 
+and providing interactive tooltips with detailed patient counts. The rotated x-axis 
+labels accommodate longer diagnosis names, while subtle gridlines offer reference 
+points without cluttering the space. A legend on the right maps colors to age groups. 
+This design enables quick identification of the most common diagnoses, how age 
+distribution varies across conditions, and which demographics are most affected.
+
+## Visualization 6: Medical Specialty Categories with Readmission Rates
+
+This visualization employs a horizontal bar chart displaying readmission rates 
+across medical specialties, sorted from highest to lowest. The horizontal 
+orientation accommodates lengthy specialty names without rotation or truncation. 
+All bars use a uniform steelblue color, avoiding redundant visual encoding since 
+readmission rates are already clearly represented by bar length, this maximizes 
+the data-ink ratio by eliminating unnecessary complexity. A key feature is the 
+vertical crimson reference line showing the overall average readmission rate, 
+which appears after the bar animations and allows viewers to immediately identify 
+which specialties perform above or below average. Interactive tooltips provide 
+specialty names, precise readmission percentages, and sample sizes (patient counts), 
+with the latter being crucial for assessing statistical reliability. Subtle vertical 
+gridlines aid value estimation without overwhelming the visual. This design effectively 
+highlights specialties facing readmission challenges and facilitates meaningful 
+comparisons across medical domains.
