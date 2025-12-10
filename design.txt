@@ -2,7 +2,25 @@ Group 49 : Mei Qi (Amy) Chen, Jenny Zhao, Tianyou Lyu, BingXian(Eason) Xie
 # Visualization Design Explanations
 https://2426-bingxianxie.github.io/ReadmissionsVisualization/
 
-## Visualization 5: Frequency of Diagnosis by Age & Primary Diagnosis
+## Visualization 1: Violin Plots
+
+## Visualization 2: Ridgeline Plot of Hospital Metrics
+
+## Visualization 3: Average Procedures During Hospital Stay by Age
+
+For this multi-linear visualization, the X-axis contains time in hospital (Days)
+and the Y-axis is the average number of procedures done for each age group for the 
+amount of time they stay in the hospial. The chart contains interactive elements 
+including a selectable age range legend that will allow users to see each line 
+alone as well as a hover tooltip that will show age range, time in hospital, 
+and average procedures done of each data point. This designs allow viewers to be 
+able to clearly see the differences in each point as will as all its data without 
+struggling and seeing which is higher than which. The color pallete chosen for this 
+plot is a blue pallete that gradually becomes darker as age ranges increase. This 
+helps make the plot visually easy to see and matches the different age group axis 
+as a whole since they are the same variable with different values.  
+
+## Visualization 4: Frequency of Diagnosis by Age & Primary Diagnosis
 
 This visualization uses a grouped bar chart to display the relationship between 
 the top seven primary diagnoses and patient age groups. The grouped bar format 
@@ -17,7 +35,7 @@ points without cluttering the space. A legend on the right maps colors to age gr
 This design enables quick identification of the most common diagnoses, how age 
 distribution varies across conditions, and which demographics are most affected.
 
-## Visualization 6: Medical Specialty Categories with Readmission Rates
+## Visualization 5: Medical Specialty Categories with Readmission Rates
 
 This visualization employs a horizontal bar chart displaying readmission rates 
 across medical specialties, sorted from highest to lowest. The horizontal 
@@ -33,3 +51,21 @@ with the latter being crucial for assessing statistical reliability. Subtle vert
 gridlines aid value estimation without overwhelming the visual. This design effectively 
 highlights specialties facing readmission challenges and facilitates meaningful 
 comparisons across medical domains.
+
+## Visualization 6: Parallel Coordinates Readmission
+
+## Visualization 7: Readmission Rate Heatmap
+
+## Visualization 8: Glucose Level Amongst Age Groups
+
+This visualization contains a stacked bar chart with X-axis as age groups in the 
+dataset and Y-axis as the counts of each glucose levels. It has a filterable side 
+glucose legend that allows users to visualize each set of glucose levels individually. 
+This helps create a easier viewing of the counts of each level that enables users to 
+make clear analysis based on counts for each age group. To make the chart even more 
+readible and user-friendly, a hover tooltip was added that will allow audiences to 
+view the exact count of each glucose level in each age group with the entire stacked 
+bar chart instead of individual selected tests from the legend. The color of this chart 
+was chosen to match the age group line chart for a more cohesive design.
+
+

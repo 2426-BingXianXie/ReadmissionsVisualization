@@ -16,6 +16,7 @@ function createDiagnosisAgeChart(data) {
         .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
+        .style("background", "white")
         .append("g")
         .attr("transform", `translate(${margin.left},${margin.top})`);
 
