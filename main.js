@@ -9,8 +9,8 @@ Promise.all([
 // Visualization 5
 function createDiagnosisAgeChart(data) {
     const margin = {top: 60, right: 180, bottom: 120, left: 80};
-    const width = 1000 - margin.left - margin.right;
-    const height = 550 - margin.top - margin.bottom;
+    const width = 600 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
 
     const svg = d3.select("#v6")
         .append("svg")
@@ -205,8 +205,8 @@ function createDiagnosisAgeChart(data) {
 // Visualization 6
 function createSpecialtyReadmissionChart(data) {
     const margin = {top: 80, right: 80, bottom: 80, left: 230};
-    const width = 1100 - margin.left - margin.right;
-    const height = 600 - margin.top - margin.bottom;
+    const width = 600 - margin.left - margin.right;
+    const height = 400 - margin.top - margin.bottom;
 
     const svg = d3.select("#v7")
         .append("svg")
@@ -308,15 +308,17 @@ function createSpecialtyReadmissionChart(data) {
         .duration(500)
         .style("opacity", 1);
 
+    const totalWidth = 600;
+
     svg.append("text")
-        .attr("x", width / 2)
+        .attr("x", totalWidth / 2 - margin.left)
         .attr("y", -50)
         .attr("text-anchor", "middle")
         .style("font-size", "18px")
         .style("font-weight", "bold")
         .style("font-family", "Georgia")
         .text("Medical Specialty Categories with Readmission Rates");
-
+        
     svg.append("text")
         .attr("x", width / 2)
         .attr("y", height + 55)
