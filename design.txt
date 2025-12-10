@@ -4,13 +4,17 @@ https://2426-bingxianxie.github.io/ReadmissionsVisualization/
 
 ## Visualization 1: Violin Plots
 
+For this multi category distribution visualization, the x-axis lists seven key patient metrics such as hospital stay length, number of lab procedures, number of medications given, and counts of outpatient, inpatient, and emergency visits. The y-axis represents the numerical values associated with each metric. The chart uses a split violin plot to compare the shape of each metric’s distribution between patients who were readmitted and those who were not. This design highlights differences in skew, spread, and density across the two groups, making it easier to identify which clinical measurements tend to be higher among readmitted patients. A pastel color palette of light blue and lavender was chosen to clearly distinguish readmission status while maintaining a cohesive and visually approachable style.
+
 ## Visualization 2: Ridgeline Plot of Hospital Metrics
+
+This ridgeline plot displays the distribution of each hospital related metric, with the x-axis showing the actual values and the y-axis listing the variables stacked vertically. Each curve represents how frequently different values occur within a specific feature, making it easy to compare which metrics are tightly clustered, which are heavily right-skewed, and which have long tails. The interactive hover tooltips reveal the feature name and the exact density at any point on a curve, helping users explore patterns that might be hidden in a simple summary chart. A simple, consistent color scheme keeps the emphasis on the shape of each distribution, allowing viewers to clearly understand how different hospital measures vary across the dataset.
 
 ## Visualization 3: Average Procedures During Hospital Stay by Age
 
 For this multi-linear visualization, the X-axis contains time in hospital (Days)
 and the Y-axis is the average number of procedures done for each age group for the 
-amount of time they stay in the hospial. The chart contains interactive elements 
+amount of time they stay in the hospital. The chart contains interactive elements 
 including a selectable age range legend that will allow users to see each line 
 alone as well as a hover tooltip that will show age range, time in hospital, 
 and average procedures done of each data point. This designs allow viewers to be 
