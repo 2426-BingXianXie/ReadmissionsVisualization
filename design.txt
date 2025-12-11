@@ -57,8 +57,11 @@ highlights specialties facing readmission challenges and facilitates meaningful
 comparisons across medical domains.
 
 ## Visualization 6: Parallel Coordinates Readmission
+I chose a parallel coordinates plot because it allows me to compare several patient attributes at the same time and see how they relate to readmission. This chart makes it easy to spot differences in patterns between readmitted and non-readmitted patients, especially when many variables are involved. The line structure helps me follow each patient’s values across all attributes, and encoding color by readmission status highlights the separation between the two groups. This design gives me a clear way to examine multivariate relationships that would be hard to see in a simple bar or scatter plot.
 
 ## Visualization 7: Readmission Rate Heatmap
+I selected a heatmap for this part because it summarizes readmission rates across two categorical variables in a compact and readable format. The color scale lets me quickly identify combinations with higher or lower readmission rates without needing to scan individual numbers. This design is effective when comparing many groups at once, and it helps me see patterns that would be difficult to capture with a regular bar chart. The heatmap makes it easy for me to spot high-risk areas and understand how readmission varies across different clinical categories.
+
 
 ## Visualization 8: Glucose Level Amongst Age Groups
 
