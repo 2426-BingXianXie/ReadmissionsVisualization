@@ -70,8 +70,6 @@ rect:hover {
 }
 
 .viz-container iframe {
-  max-width: 1000px;
-  height: 550px;
   display: block;
   margin: 0 auto;
 }
